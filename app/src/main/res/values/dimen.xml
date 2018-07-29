@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size10">10dip</dimen>
+    <dimen name="rl_height60">60dip</dimen>
+    <dimen name="size20">20dip</dimen>
+    <dimen name="size30">30dip</dimen>
+    <dimen name="size40">40dip</dimen>
+    <dimen name="size8">8dip</dimen>
+    <dimen name="size_text">16sp</dimen>
+    <dimen name="size5">5dip</dimen>
+</resources>

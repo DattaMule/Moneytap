@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Wikipedia</string>
+    <string name="str_search_hint">Enter data to search</string>
+    <string name="str_title">Title</string>
+    <string name="str_desc">Description</string>
+    <string name="str_no_data_found">Oops...!! No data found</string>
+    <string name="str_dialog_title">Hey...!</string>
+    <string name="str_dialog_message">Are you sure you want to close this app?</string>
+    <string name="str_dialog_yes">Yes</string>
+    <string name="str_dialog_no">No</string>
+    <string name="str_url_to_get_records">https://en.wikipedia.org//w/api.php?action=query&amp;format=json&amp;prop=pageimages%7Cpageterms&amp;generator=prefixsearch&amp;redirects=1&amp;formatversion=2&amp;piprop=thumbnail&amp;pithumbsize=50&amp;pilimit=10&amp;wbptterms=description&amp;gpssearch=</string>
+    <string name="str_gpslimit">&amp;gpslimit=10</string>
+    <string name="str_internet_connection_check">Please check your internet connection and try again.</string>
+    <string name="str_load_page_url">https://en.m.wikipedia.org/wiki/</string>
+</resources>

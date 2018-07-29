@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="@dimen/rl_height60"
+            android:layout_height="@dimen/rl_height60"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/no_image" />
+
+        <TextView
+            android:id="@+id/txt_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginTop="@dimen/size10"
+            android:layout_toRightOf="@+id/imageProfile"
+            android:text="@string/str_title"
+            android:textColor="@color/colorButtonText" />
+
+        <TextView
+            android:id="@+id/txt_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_Title"
+            android:layout_marginBottom="@dimen/size10"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginTop="@dimen/size5"
+            android:layout_toRightOf="@+id/imageProfile"
+            android:text="@string/str_desc"
+            android:textColor="@color/colorButtonText" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="@color/colorPrimary"
+            android:layout_below="@+id/txt_description"
+            ></View>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SearchActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rl_height60"
+        android:background="@color/grayAlpha">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/size20"
+            android:layout_height="@dimen/size40"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/size8"
+            android:layout_marginTop="@dimen/size10"
+            android:src="@drawable/arrow_left" />
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rl_height60"
+            android:layout_marginBottom="@dimen/size10"
+            android:layout_marginLeft="@dimen/size8"
+            android:layout_marginRight="@dimen/size8"
+            android:layout_marginTop="@dimen/size10"
+            android:layout_toLeftOf="@+id/img_clear"
+            android:layout_toRightOf="@+id/img_back"
+            android:background="@null"
+            android:hint="@string/str_search_hint"
+            android:imeOptions="actionDone"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/img_clear"
+            android:layout_width="@dimen/size30"
+            android:layout_height="@dimen/size40"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size10"
+            android:layout_marginTop="@dimen/size10"
+            android:src="@drawable/closebutton" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/search_loading_progress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size30"
+        android:layout_below="@+id/rl_search"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_no_data_found"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rl_height60"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginRight="@dimen/size10"
+        android:layout_marginTop="@dimen/size10"
+        android:background="@color/colorButtonBackground"
+        android:layout_below="@id/rl_search"
+        android:text="@string/str_no_data_found"
+        android:textAllCaps="false"
+        android:textColor="@color/colorButtonText"
+        android:textSize="@dimen/size_text"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_loading_progress"
+        android:layout_marginTop="@dimen/size10"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/size10"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_marginRight="@dimen/size10">
+
+            <TableLayout
+                android:id="@+id/tl_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="0"
+                android:stretchColumns="0"></TableLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

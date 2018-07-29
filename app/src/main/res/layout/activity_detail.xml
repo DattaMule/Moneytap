@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailActivity">
+
+    <Button
+        android:id="@+id/btn_no_intenet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginRight="@dimen/size10"
+        android:layout_marginTop="@dimen/size10"
+        android:background="@color/colorButtonBackground"
+        android:text="@string/str_internet_connection_check"
+        android:textAllCaps="false"
+        android:textColor="@color/colorButtonText"
+        android:textSize="@dimen/size_text"
+        android:visibility="gone"/>
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/web_view"
+        ></WebView>
+</RelativeLayout>
